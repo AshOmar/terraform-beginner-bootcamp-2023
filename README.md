@@ -1,6 +1,6 @@
 # Terraform Beginner Bootcamp 2023
 
-- [Semantic Versioning](./jornal/Week0.md#semantic-versioning-mage)
+- [Semantic Versioning](./journal/Week0.md#semantic-versioning-mage)
 - [Install the Terraform CLI](Week0.md#install-the-terraform-cli)
   * [Considerations with the Terraform CLI changes](Week0.md#considerations-with-the-terraform-cli-changes)
   * [Considerations for Linux Distribution](Week0.md#considerations-for-linux-distribution)
