@@ -1,7 +1,7 @@
 # Terraform Beginner Bootcamp 2023 - Week0
 
 
-- [Semantic Versioning](#semantic-versioning)
+- [Semantic Versioning](Week0.md#semantic-versioning-mage)
 - [Install the Terraform CLI](#install-the-terraform-cli)
   * [Considerations with the Terraform CLI changes](#considerations-with-the-terraform-cli-changes)
   * [Considerations for Linux Distribution](#considerations-for-linux-distribution)
@@ -114,10 +114,17 @@ chmod 744 ./bin/install_terraform_cli
 
 ## Gitpod Lifecycle
 
-Below you can find life cycle for new workspace and 
+Below you can find life cycle for New WorkSpace, Restart WorkSpace and Start Snapshot:
 
-[](./assets/Gitpod-execution-order-New.jpeg)
 
-https://www.gitpod.io/docs/configure/workspaces/tasks
-https://www.gitpod.io/guides/gitpodify
+
+![New WorkSpace](assets/Gitpod-execution-order-New.jpeg)
+
+![Restart WorkSpace](../assets/Gitpdod-execution-order-Restart.png)
+
+![Start Snapshot](../assets/Gitpdod-execution-order-StartSnapshot.png)
+
+
+[](https://www.gitpod.io/docs/configure/workspaces/tasks)
+[](https://www.gitpod.io/guides/gitpodify)
 
