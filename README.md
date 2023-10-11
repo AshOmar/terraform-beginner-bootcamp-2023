@@ -1,15 +1,11 @@
 # Terraform Beginner Bootcamp 2023
 
-## Semantic Versioning :mage:
-We are going to use semantic versioning for tagging in this project
-
-[Semver.org](https://semver.org/)
-
-The format will be **MAJOR.MINOR.PATCH** e.g. `1.0.0`
-
-Given a version number **MAJOR.MINOR.PATCH**, increment the:
-
-**MAJOR** version when you make incompatible API changes
-**MINOR** version when you add functionality in a backward-compatible manner
-**PATCH** version when you make backward-compatible bug fixes
-Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
+- [Semantic Versioning](Week0.md#semantic-versioning-mage)
+- [Install the Terraform CLI](Week0.md#install-the-terraform-cli)
+  * [Considerations with the Terraform CLI changes](Week0.md#considerations-with-the-terraform-cli-changes)
+  * [Considerations for Linux Distribution](Week0.md#considerations-for-linux-distribution)
+  * [Refactoring into Bash Scripts](Week0.md#refactoring-into-bash-scripts)
+    + [Shebang Considerations](Week0.md#shebang-considerations)
+    + [Execution Considerations](Week0.md#execution-considerations)
+    + [Linux Permissions Considerations](Week0.md#linux-permissions-considerations)
+- [Gitpod Lifecycle](Week0.md#gitpod-lifecycle)
