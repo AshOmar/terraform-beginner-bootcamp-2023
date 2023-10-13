@@ -117,14 +117,16 @@ chmod 744 ./bin/install_terraform_cli
 Below you can find life cycle for New WorkSpace, Restart WorkSpace and Start Snapshot:
 
 
+[GitPod Docs ](https://www.gitpod.io/docs/configure/workspaces/tasks)
 
-![New WorkSpace](assets/Gitpod-execution-order-New.jpeg)
+[gitpodify](https://www.gitpod.io/guides/gitpodify)
+
+
+![New WorkSpace](../assets/Gitpod-execution-order-New.jpeg)
 
 ![Restart WorkSpace](../assets/Gitpdod-execution-order-Restart.png)
 
-![Start Snapshot](../assets/Gitpdod-execution-order-StartSnapshot.png)
+![Start Snapshot](../assets/Gitpod-execution-order-StartSnapshot.png)
 
 
-[](https://www.gitpod.io/docs/configure/workspaces/tasks)
-[](https://www.gitpod.io/guides/gitpodify)
 
