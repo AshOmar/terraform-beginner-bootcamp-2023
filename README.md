@@ -16,7 +16,8 @@
   * [Printing Vars](./journal/Week0.md#printing-vars)
   * [Scoping of Env Vars](./journal/Week0.md#scoping-of-env-vars)
   * [Persisting Env Vars in Gitpod](./journal/Week0.md#persisting-env-vars-in-gitpod)
-
+- [AWS CLI Installation](./journal/./Week0.md#aws-cli-installation)
+  
 ## Week1
 
 ## Week2
