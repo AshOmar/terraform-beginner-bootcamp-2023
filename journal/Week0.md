@@ -16,7 +16,7 @@
   * [Printing Vars](./Week0.md#printing-vars)
   * [Scoping of Env Vars](./Week0.md#scoping-of-env-vars)
   * [Persisting Env Vars in Gitpod](./Week0.md#persisting-env-vars-in-gitpod)
-
+- [AWS CLI Installation](./Week0.md#aws-cli-installation)
 ## Semantic Versioning :mage:
 
 We are going to use semantic versioning for tagging in this project
@@ -193,11 +193,43 @@ e.g:
 gp env HELLO='world'
 ```
 
-All future workspaces launched will set the env vars for all bash terminals opened in those workspaces. If you want to set that environment variable in your terminal, you can do so using -e
+All future workspaces launched will set the env vars for all bash terminals opened in those workspaces. If you want to set that environment variable in your terminal, you can do so using -e:
+
+```bash
+eval $(gp env -e foo=bar)
+```
 
 To update the current terminal session with the latest set of persistent environment variables, use:
 
 `eval $(gp env -e)`
 
 You can also set en vars in the `.gitpod.yml` but this can only contain non-senstive env vars.
+
+## AWS CLI Installation
+
+AWS CLI is installed for the project via the bash script [`./bin/install_aws_cli`](./bin/install_aws_cli)
+
+
+[Getting Started Install (AWS CLI)](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+
+[AWS CLI Env Vars](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html)
+
+We'll need to generate AWS CLI credits from IAM User in order to the user AWS CLI.
+
+We can check if our AWS credentials are configured correctly by running the following AWS CLI command:
+
+```sh
+aws sts get-caller-identity
+```
+
+If it is successful you should see a JSON payload return that looks like this:
+
+```json
+{
+    "UserId": "AIDAZYYPQ4SVYAZ6HYLMS",
+    "Account": "671658075307",
+    "Arn": "arn:aws:iam::671658075307:user/TFBeginnerUsr"
+}
+```
+I am using TFBeginnerUsr user for this project.
 
