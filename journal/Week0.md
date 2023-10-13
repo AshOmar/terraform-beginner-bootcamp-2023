@@ -1,8 +1,8 @@
 # Terraform Beginner Bootcamp 2023 - Week0
 
 
-- [Semantic Versioning](./journal/Week0.md#semantic-versioning-mage)
-- [Install the Terraform CLI](./journal/Week0.md#install-the-terraform-cli)
+- [Semantic Versioning](/Week0.md#semantic-versioning-mage)
+- [Install the Terraform CLI](./Week0.md#install-the-terraform-cli)
   * [Considerations with the Terraform CLI changes](./journal/Week0.md#considerations-with-the-terraform-cli-changes)
   * [Considerations for Linux Distribution](./journal/Week0.md#considerations-for-linux-distribution)
   * [Refactoring into Bash Scripts](./journal/Week0.md#refactoring-into-bash-scripts)
@@ -15,7 +15,7 @@
   * [Setting and Unsetting Env Vars](./journal/Week0.md#setting-and-unsetting-env-vars)
   * [Printing Vars](./journal/Week0.md#printing-vars)
   * [Scoping of Env Vars](./journal/Week0.md#scoping-of-env-vars)
-  * [Persisting Env Vars in Gitpod](./journal/Week0.md#persisting-env-vars-in-gitpod)
+  * [Persisting Env Vars in Gitpod](/Week0.md#persisting-env-vars-in-gitpod)
 
 ## Semantic Versioning :mage:
 
