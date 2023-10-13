@@ -23,9 +23,9 @@
     + [Terraform init](./Week0.md#terraform-init)
     + [Terraform plan](./Week0.md#terraform-plan)
     + [Terraform apply](./Week0.md#terraform-apply)
-  * [Terraform Lock Files](.Week0.md#terraform-lock-files)
-  * [Terraform State Files](.Week0.md#terraform-state-files)
-  * [Terraform Directory](.Week0.md#terraform-directory)
+  * [Terraform Lock Files](./Week0.md#terraform-lock-files)
+  * [Terraform State Files](./Week0.md#terraform-state-files)
+  * [Terraform Directory](./Week0.md#terraform-directory)
 
 
 ## Semantic Versioning :mage:
