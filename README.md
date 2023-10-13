@@ -16,7 +16,16 @@
   * [Printing Vars](./journal/Week0.md#printing-vars)
   * [Scoping of Env Vars](./journal/Week0.md#scoping-of-env-vars)
   * [Persisting Env Vars in Gitpod](./journal/Week0.md#persisting-env-vars-in-gitpod)
-- [AWS CLI Installation](./journal/./Week0.md#aws-cli-installation)
+- [AWS CLI Installation](./journal/Week0.md#aws-cli-installation)
+- [Terrform Basics](./journal/Week0.md#terraform-basics)
+  * [Terraform Registry](./journal/Week0.md#terraform-registry)
+  * [Terraform Console](./journal/Week0.md#terraform-console)
+    + [Terraform init](./journal/Week0.md#terraform-init)
+    + [Terraform plan](./journal/Week0.md#terraform-plan)
+    + [Terraform apply](./journal/Week0.md#terraform-apply)
+  * [Terraform Lock Files](./journal/Week0.md#terraform-lock-files)
+  * [Terraform State Files](./journal/Week0.md#terraform-state-files)
+  * [Terraform Directory](./journal/Week0.md#terraform-directory)
   
 ## Week1
 
