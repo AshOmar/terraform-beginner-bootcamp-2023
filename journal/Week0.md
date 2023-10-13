@@ -1,16 +1,21 @@
 # Terraform Beginner Bootcamp 2023 - Week0
 
 
-- [Semantic Versioning](./journal/Week0.md#semantic-versioning-mage)
-- [Install the Terraform CLI](./journal/Week0.md#install-the-terraform-cli)
-  * [Considerations with the Terraform CLI changes](./journal/Week0.md#considerations-with-the-terraform-cli-changes)
-  * [Considerations for Linux Distribution](./journal/Week0.md#considerations-for-linux-distribution)
-  * [Refactoring into Bash Scripts](./journal/Week0.md#refactoring-into-bash-scripts)
-    + [Shebang Considerations](./journal/Week0.md#shebang-considerations)
-    + [Execution Considerations](./journal/Week0.md#execution-considerations)
-    + [Linux Permissions Considerations](./journal/Week0.md#linux-permissions-considerations)
-- [Gitpod Lifecycle](./journal/Week0.md#gitpod-lifecycle)
-
+- [Semantic Versioning](./Week0.md#semantic-versioning-mage)
+- [Install the Terraform CLI](./Week0.md#install-the-terraform-cli)
+  * [Considerations with the Terraform CLI changes](./Week0.md#considerations-with-the-terraform-cli-changes)
+  * [Considerations for Linux Distribution](./Week0.md#considerations-for-linux-distribution)
+  * [Refactoring into Bash Scripts](./Week0.md#refactoring-into-bash-scripts)
+    + [Shebang Considerations](./Week0.md#shebang-considerations)
+    + [Execution Considerations](./Week0.md#execution-considerations)
+    + [Linux Permissions Considerations](./Week0.md#linux-permissions-considerations)
+- [Gitpod Lifecycle](./Week0.md#gitpod-lifecycle)
+- [Working with Env Vars](./Week0.md#working-with-env-vars)
+  * [env Command](./Week0.md#env-command)
+  * [Setting and Unsetting Env Vars](./Week0.md#setting-and-unsetting-env-vars)
+  * [Printing Vars](./Week0.md#printing-vars)
+  * [Scoping of Env Vars](./Week0.md#scoping-of-env-vars)
+  * [Persisting Env Vars in Gitpod](./Week0.md#persisting-env-vars-in-gitpod)
 
 ## Semantic Versioning :mage:
 
@@ -117,14 +122,82 @@ chmod 744 ./bin/install_terraform_cli
 Below you can find life cycle for New WorkSpace, Restart WorkSpace and Start Snapshot:
 
 
+[GitPod Docs ](https://www.gitpod.io/docs/configure/workspaces/tasks)
 
-![New WorkSpace](assets/Gitpod-execution-order-New.jpeg)
-
-![Restart WorkSpace](../assets/Gitpdod-execution-order-Restart.png)
-
-![Start Snapshot](../assets/Gitpdod-execution-order-StartSnapshot.png)
+[gitpodify](https://www.gitpod.io/guides/gitpodify)
 
 
-[](https://www.gitpod.io/docs/configure/workspaces/tasks)
-[](https://www.gitpod.io/guides/gitpodify)
+![New WorkSpace](../assets/Gitpod-execution-order-New.jpeg)
+
+![Restart WorkSpace](../assets/Gitpod-execution-order-Restart.png)
+
+![Start Snapshot](../assets/Gitpod-execution-order-StartSnapshot.png)
+
+## Working with Env Vars
+
+### env command
+
+We can list out all Enviroment Variables (Env Vars) using the `env` command
+
+We can filter specific env vars using grep eg. `env | grep AWS_`
+
+### Setting and Unsetting Env Vars
+
+In the terminal, we can set vars using `export HELLO='world`
+
+In the terminal, we can unset vars using `unset HELLO`
+
+We can set an env var temporarily when just running a command like below:
+
+```sh
+HELLO='world' ./bin/print_message
+```
+
+Within a bash script, we can set env without writing export eg.
+
+```sh
+#!/usr/bin/env bash
+
+HELLO='world'
+
+echo $HELLO
+```
+
+### Printing Vars
+
+We can print an env var using echo eg. `echo $HELLO`
+
+### Scoping of Env Vars
+
+When you open up new bash terminals in VSCode it will not be aware of env vars that you have set in another window.
+
+If you want to Env Vars to persist across all future bash terminals that are open you need to set env vars in your bash profile. eg. `.bash_profile`
+
+### Persisting Env Vars in Gitpod
+
+[Gitpod Env Vars](https://www.gitpod.io/docs/configure/projects/environment-variables)
+
+We can persist env vars into gitpod by storing them in Gitpod Secrets Storage.
+
+```
+Usage:
+  gp env [flags]
+
+Flags:
+  -e, --export   produce a script that can be eval'ed in Bash
+  -h, --help     help for env
+  -u, --unset    deletes/unsets persisted environment variables
+```
+e.g:
+```
+gp env HELLO='world'
+```
+
+All future workspaces launched will set the env vars for all bash terminals opened in those workspaces. If you want to set that environment variable in your terminal, you can do so using -e
+
+To update the current terminal session with the latest set of persistent environment variables, use:
+
+`eval $(gp env -e)`
+
+You can also set en vars in the `.gitpod.yml` but this can only contain non-senstive env vars.
 

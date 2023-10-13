@@ -10,7 +10,12 @@
     + [Execution Considerations](./journal/Week0.md#execution-considerations)
     + [Linux Permissions Considerations](./journal/Week0.md#linux-permissions-considerations)
 - [Gitpod Lifecycle](./journal/Week0.md#gitpod-lifecycle)
-
+- [Working with Env Vars](./journal/Week0.md#working-with-env-vars)
+  * [env Command](./journal/Week0.md#env-command)
+  * [Setting and Unsetting Env Vars](./journal/Week0.md#setting-and-unsetting-env-vars)
+  * [Printing Vars](./journal/Week0.md#printing-vars)
+  * [Scoping of Env Vars](./journal/Week0.md#scoping-of-env-vars)
+  * [Persisting Env Vars in Gitpod](./journal/Week0.md#persisting-env-vars-in-gitpod)
 
 ## Week1
 
