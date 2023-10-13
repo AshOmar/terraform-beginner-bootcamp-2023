@@ -193,7 +193,11 @@ e.g:
 gp env HELLO='world'
 ```
 
-All future workspaces launched will set the env vars for all bash terminals opened in those workspaces. If you want to set that environment variable in your terminal, you can do so using -e
+All future workspaces launched will set the env vars for all bash terminals opened in those workspaces. If you want to set that environment variable in your terminal, you can do so using -e:
+
+```bash
+eval $(gp env -e foo=bar)
+```
 
 To update the current terminal session with the latest set of persistent environment variables, use:
 
