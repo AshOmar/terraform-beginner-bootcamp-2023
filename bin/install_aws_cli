@@ -9,3 +9,5 @@ unzip awscliv2.zip
 sudo ./aws/install
 
 cd $PROJECT_ROOT
+
+aws sts get-caller-identity
