@@ -21,8 +21,9 @@
   * [Terraform Registry](./Week0.md#terraform-registry)
   * [Terraform Console](./Week0.md#terraform-console)
     + [Terraform init](./Week0.md#terraform-init)
-    + [Terraform plan](./Week0.md#terraform-plan)
-    + [Terraform apply](./Week0.md#terraform-apply)
+    + [Terraform Plan](./Week0.md#terraform-plan)
+    + [Terraform Apply](./Week0.md#terraform-apply)
+    + [Terraform Destroy](./Week0.md#terraform-destroy)
   * [Terraform Lock Files](./Week0.md#terraform-lock-files)
   * [Terraform State Files](./Week0.md#terraform-state-files)
   * [Terraform Directory](./Week0.md#terraform-directory)
@@ -260,7 +261,7 @@ Terraform sources their providers and modules from the Terraform registry which 
 We can see a list of all the Terraform commands by simply typing `terraform`
 
 
-#### Terraform Init
+#### Terraform init
 
 `terraform init`
 
@@ -281,6 +282,14 @@ We can output this changeset ie. "plan" to be passed to an apply command, but of
 This will run a plan and pass the changeset to be executed by Terraform. Apply should prompt yes or no.
 
 If we want to automatically approve an apply command we can provide the auto approve flag eg. `terraform apply --auto-approve`
+
+#### Terraform Destroy
+
+`teraform destroy`
+
+This will destroy resources.
+
+You can also use the auto approve flag to skip the approve prompt eg. `terraform apply --auto-approve`
 
 ### Terraform Lock Files
 
